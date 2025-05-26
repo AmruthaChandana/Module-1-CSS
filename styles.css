@@ -233,3 +233,67 @@ a:active {
   padding: 20px;
   background-color: #f9f9f9;
 }
+
+/* ===== Task 10: Responsive Web Design with Media Queries ===== */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-menu a {
+    padding: 8px 16px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .eventCard,
+  .demo-box,
+  .box {
+    width: 90%; /* Use % for flexible layout */
+  }
+
+  .event-table {
+    font-size: 12px;
+  }
+
+  .news-article {
+    column-count: 1;
+    padding: 10px;
+  }
+
+  input.focus-input {
+    width: 80vw;
+  }
+}
+
+/* Bonus: Flexbox layout for nav */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Make tables and boxes more responsive */
+.event-table th, .event-table td {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Make images (if any) responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
