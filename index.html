@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Local Community Event Portal</title>
-  <!-- External CSS -->
-  <link rel="stylesheet" href="/styles.css" />
-
-  <!--  Internal CSS -->
-  <style>
-    body {
-      background-color: #f5f5f5;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Inline CSS -->
-  <h1 style="color: red;">Welcome to Our Community Event Portal</h1>
+  <!-- Header with ID selector -->
+  <header id="mainHeader">
+    <h1>Welcome to the Local Community Portal</h1>
+  </header>
 
-  <p style="margin: 5%;">Explore upcoming local events and activities in your area.</p>
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
 
-  <div class="eventCard">
-    <h2>Yoga in the Park</h2>
-    <p>Join us this weekend for a relaxing outdoor yoga session.</p>
-  </div>
+      <!-- Event card with class selector -->
+      <div class="eventCard">
+        <h3>Community Gardening Day</h3>
+        <p>Join us to plant flowers and trees in the neighborhood park.</p>
+      </div>
+
+      <div class="eventCard">
+        <h3>Neighborhood Potluck</h3>
+        <p>Bring your favorite dish and meet your neighbors!</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Workshops</h2>
+
+      <div class="eventCard">
+        <h3>Yoga in the Park</h3>
+        <p>Free yoga sessions every Saturday morning.</p>
+      </div>
+    </section>
+  </main>
+
+
 
 </body>
 </html>
