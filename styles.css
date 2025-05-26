@@ -48,6 +48,10 @@ h2 {
   color: #00695c; /* HEX color */
   margin-bottom: 10px;
 }
+.eventCard:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
 
 /* ===== Event Descriptions ===== */
 .eventCard p {
@@ -173,6 +177,10 @@ a:active {
   color: white;
   text-transform: uppercase;
 }
+.event-table tbody tr:hover {
+  background-color: #eef7ff;
+}
+
 
 /* ===== Task 8: Box Model and Visibility Demo ===== */
 
@@ -232,7 +240,12 @@ a:active {
   column-rule: 1px solid gray;
   padding: 20px;
   background-color: #f9f9f9;
+  hyphens: auto;
 }
+.news-article {
+  hyphens: auto;
+}
+
 
 /* ===== Task 10: Responsive Web Design with Media Queries ===== */
 
@@ -253,11 +266,12 @@ a:active {
   }
 
   .nav-menu a {
-    padding: 8px 16px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
 
   .eventCard,
   .demo-box,
