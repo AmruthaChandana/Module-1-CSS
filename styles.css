@@ -1,40 +1,56 @@
-/* Universal selector - reset margin and padding for all elements */
+/* ===== Reset and Base Styles ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Element selector for all <h2> */
-h2 {
-  color: #2a9d8f;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 20px 0 10px;
-  text-align: center;
+/* ===== Body Background ===== */
+body {
+  background-size: cover;
+  background-color: #f0f8ff; /* Fallback background color */
+  font-family: Arial, sans-serif;
+  color: #222;
 }
 
-/* ID selector for #mainHeader */
+/* ===== Header Styles with Gradient ===== */
 #mainHeader {
-  background-color: #264653;
+  background: linear-gradient(to right, #43cea2, #185a9d); /* blue-green gradient */
   color: white;
-  padding: 30px 0;
+  padding: 20px;
   text-align: center;
-  font-size: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Class selector for .eventCard */
+/* ===== Section Headings ===== */
+h2 {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* ===== Event Card Styling ===== */
 .eventCard {
-  background-color: #f4a261;
-  margin: 15px auto;
+  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  border: 1px solid #ddd;
+  margin: 20px auto;
   padding: 20px;
   width: 80%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Grouping selector for h3 and p */
-h3, p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
+/* ===== Event Titles ===== */
+.eventCard h3 {
+  color: #00695c; /* HEX color */
   margin-bottom: 10px;
 }
+
+/* ===== Event Descriptions ===== */
+.eventCard p {
+  color: rgba(0, 0, 0, 0.8); /* RGBA color */
+}
+
+
