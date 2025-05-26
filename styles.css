@@ -1,56 +1,38 @@
-/* ===== Reset and Base Styles ===== */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== Body Background ===== */
+/* Background Styling */
 body {
+  background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-color: #f0f8ff; /* Fallback background color */
-  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Fallback color */
   color: #222;
+  font-family: Arial, sans-serif;
 }
 
-/* ===== Header Styles with Gradient ===== */
+/* Header Styles */
 #mainHeader {
-  background: linear-gradient(to right, #43cea2, #185a9d); /* blue-green gradient */
+  background: linear-gradient(to right, #00796B, #004D40);
   color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== Section Headings ===== */
-h2 {
-  background: linear-gradient(to right, #ff9966, #ff5e62);
-  color: white;
-  padding: 10px;
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* ===== Event Card Styling ===== */
+/* Event Cards */
 .eventCard {
-  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
-  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
   margin: 20px auto;
   padding: 20px;
   width: 80%;
   border-radius: 10px;
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
-/* ===== Event Titles ===== */
-.eventCard h3 {
-  color: #00695c; /* HEX color */
-  margin-bottom: 10px;
+.eventCard h2 {
+  color: #00695C; /* HEX Color */
 }
-
-/* ===== Event Descriptions ===== */
-.eventCard p {
-  color: rgba(0, 0, 0, 0.8); /* RGBA color */
-}
-
-
