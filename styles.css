@@ -25,7 +25,7 @@ body {
 
 /* ===== Section Headings ===== */
 h2 {
-  background: linear-gradient(to right, #ff9966, #ff5e62);
+  background: linear-gradient(to right, #ff9966, #44afaf);
   color: white;
   padding: 10px;
   text-align: center;
@@ -145,4 +145,31 @@ a:active {
 
 .nav-menu a:hover {
   background-color: #e0e0e0;
+}
+
+/* Task 7: Table Styling */
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Zebra striping */
+.event-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.event-table th {
+  background-color: #007BFF;
+  color: white;
+  text-transform: uppercase;
 }
